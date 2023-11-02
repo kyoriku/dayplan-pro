@@ -1,5 +1,5 @@
 # Work Day Scheduler
-This application is a simple calendar application designed to help employees with busy schedules manage their time effectively. It allows users to add important events to their daily planner for each hour of a typical working day, which spans from 9:00 am to 5:00 pm. The application runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It utilizes the Day.js library to work with date and time.
+This application is a simple day planner designed to help employees with busy schedules manage their time effectively. It allows users to add important events to their daily planner for each hour of a typical working day, which spans from 9:00 am to 5:00 pm. The application runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It utilizes the Day.js library to work with date and time.
 
 The purpose of this application is to provide a user-friendly digital tool for individuals with packed schedules to organize and keep track of their daily tasks and appointments. It offers an easy and efficient way to plan, update, and save events throughout the workday.
 
