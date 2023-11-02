@@ -22,7 +22,9 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
   function displayCurrentDate() {
     var currentDate = dayjs().format ('dddd, MMMM D, YYYY');
+    var currentTime = dayjs().format ('h:mm:ss A');
     $('#currentDay').text(currentDate);
+    $('#currentTime').text(currentTime);
   }
 
   displayCurrentDate();
