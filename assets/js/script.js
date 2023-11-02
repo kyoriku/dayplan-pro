@@ -1,8 +1,8 @@
 $(function () {
   $('.saveBtn').on('click', function () {
-    var hourId = $(this).parent().attr('id');
-    var description = $(this).siblings('.description').val();
-    localStorage.setItem(hourId, description);
+    var timeSlotId = $(this).parent().attr('id');
+    var timeSlotDescription = $(this).siblings('.description').val();
+    localStorage.setItem(timeSlotId, timeSlotDescription);
   });
 
   function updateTimeBlocks() {
@@ -24,22 +24,22 @@ $(function () {
   function loadSavedEvents() {
     $('.time-block').each(function () {
       var hourId = $(this).attr('id');
-      var description = localStorage.getItem(hourId);
-      if (description !== null) {
-        $(this).children('.description').val(description);
+      var savedDescription = localStorage.getItem(hourId);
+      if (savedDescription !== null) {
+        $(this).children('.description').val(savedDescription);
       }
     });
   }
 
   function displayCurrentDate() {
-    var currentDate = dayjs().format('dddd, MMMM D, YYYY');
-    var currentTime = dayjs().format('h:mm:ss A');
-    $('#currentDay').text(currentDate);
-    $('#currentTime').text(currentTime);
+    var dateNow = dayjs().format('dddd, MMMM D, YYYY');
+    var timeNow = dayjs().format('h:mm:ss A');
+    $('#currentDate').text(dateNow);
+    $('#currentTime').text(timeNow);
   }
 
   updateTimeBlocks();
-  loadSavedEvents(); 
+  loadSavedEvents();
   displayCurrentDate();
 
   setInterval(updateTimeBlocks, 60000);
