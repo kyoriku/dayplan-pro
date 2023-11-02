@@ -14,6 +14,21 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+  function updateTimeBlocks() {
+    var currentHour = dayjs().hour();
+
+    $('.time-block').each(function () {
+      var blockHour = parseInt($(this).data('hour'));
+
+      if (blockHour < currentHour) {
+        $(this).removeClass('present future').addClass('past');
+      } else if (blockHour === currentHour) {
+        $(this).removeClass('past future').addClass('present');
+      } else {
+        $(this).removeClass('past present').addClass('future');
+      }
+    });
+  }
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
@@ -21,13 +36,15 @@ $(function () {
 
   // TODO: Add code to display the current date in the header of the page.
   function displayCurrentDate() {
-    var currentDate = dayjs().format ('dddd, MMMM D, YYYY');
-    var currentTime = dayjs().format ('h:mm:ss A');
+    var currentDate = dayjs().format('dddd, MMMM D, YYYY');
+    var currentTime = dayjs().format('h:mm:ss A');
     $('#currentDay').text(currentDate);
     $('#currentTime').text(currentTime);
   }
 
+  updateTimeBlocks();
   displayCurrentDate();
 
+  setInterval(updateTimeBlocks, 60000);
   setInterval(displayCurrentDate, 1000);
 });
