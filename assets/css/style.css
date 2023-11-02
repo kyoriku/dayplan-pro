@@ -72,10 +72,10 @@ footer p {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .saveBtn i:hover {
-  font-size: 32px;
+  font-size: 24px;
   transition: all 0.5s ease-in-out;
 }
