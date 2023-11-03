@@ -6,6 +6,7 @@ The purpose of this application is to provide a user-friendly digital tool for i
 Users can open the planner, where they will see the current day displayed at the top of the calendar. As they scroll down, time blocks for standard business hours are presented, color-coded to indicate whether each time block is in the past, present, or future. Users can click into a time block to enter an event and save it by clicking the save button for that time block. The entered event text is stored in local storage, ensuring that saved events persist even after the page is refreshed.
 
 ## Credits
+- [Day.js - Hour](https://day.js.org/docs/en/get-set/hour)
 - [Day.js - Format](https://day.js.org/docs/en/display/format)
 - [jQuery - .each()](https://api.jquery.com/each/)
 - [jQuery - .attr()](https://api.jquery.com/attr/)
@@ -17,10 +18,10 @@ Users can open the planner, where they will see the current day displayed at the
 - [jQuery - .siblings()](https://api.jquery.com/siblings/)
 - [jQuery - .children()](https://api.jquery.com/children/)
 - [jQuery - .val()](https://api.jquery.com/val/)
-- [MDN - Storage: setItem() method](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem)
-- [MDN - Storage: getItem() method](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem)
+- [MDN - setItem()](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem)
+- [MDN - getItem()](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem)
 - [MDN - parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
-- [MDN - setInterval() global function](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)
+- [MDN - setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)
 
 ## License
 Please refer to the LICENSE in the repo.
