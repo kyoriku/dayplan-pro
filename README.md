@@ -5,6 +5,9 @@ The purpose of this application is to provide a user-friendly digital tool for i
 
 Users can open the planner, where they will see the current day displayed at the top of the calendar. As they scroll down, time blocks for standard business hours are presented, color-coded to indicate whether each time block is in the past, present, or future. Users can click into a time block to enter an event and save it by clicking the save button for that time block. The entered event text is stored in local storage, ensuring that saved events persist even after the page is refreshed.
 
+## Usage
+> [Link to deployed application](https://kyoriku.github.io/work-day-scheduler/)
+
 ## Credits
 - [Day.js - Hour](https://day.js.org/docs/en/get-set/hour)
 - [Day.js - Format](https://day.js.org/docs/en/display/format)
