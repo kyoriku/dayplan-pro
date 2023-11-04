@@ -8,6 +8,8 @@ Users can open the planner, where they will see the current day displayed at the
 ## Usage
 > [Link to deployed application](https://kyoriku.github.io/work-day-scheduler/)
 
+![Screenshot](assets/images/workdayscheduler.png)
+
 ## Credits
 - [Day.js - Hour](https://day.js.org/docs/en/get-set/hour)
 - [Day.js - Format](https://day.js.org/docs/en/display/format)
